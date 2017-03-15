@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+  <head>
+   
+    <title>Review</title>
+  </head>
+  <body>
+  <h1>REVIEW</h1>
+ 
+  
+  <table>
+  <td th:text="${review.title}"> </td>
+  <td th:text="${review.category}"> </td>
+  <td th:text="${review.content}"> </td>
+  <img th:src="${review.imageUrl}"/>
+  </table>
+ 
+  
+ 
+  </body>
+</html>

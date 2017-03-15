@@ -1,0 +1,9 @@
+body{
+	 background-image: linear-gradient(to right, black 0%,white 100%);
+	background-blend-mode: normal;
+	
+}
+table{
+	font-size: 40px;
+	color: violet;
+}

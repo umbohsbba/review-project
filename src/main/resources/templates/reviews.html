@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+  <head>
+
+   
+    <title>Reviews</title>
+  </head>
+  <body>
+  <h1>REVIEWS</h1>
+  <div th:each="review: ${reviews}">
+    <table>
+         <td th:text="'#' + ${review.id}"> </td>
+         <td th:text="${review.title}"> </td>
+         <tr>
+         <td th:text="'Category: ' + ${review.category}"> </td>
+         </tr>
+         <td th:text="${review.content}"> </td>
+         <tr>
+         <img th:src="${review.imageUrl}"/>
+         </tr>
+          
+   <a th:href="@{http://localhost:8080/showreview(id=${review.id})}">Click here</a>
+
+    </table>
+  </div>
+  
+ 
+  </body>
+</html>
+
+
+
